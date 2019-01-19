@@ -4,11 +4,45 @@
     padding: 0;
 }
 html{
-    font-family: "Roboto";
-    font-size: 10 piksel;
-    
-
-}
+    font-family: "Roboto", sans-serif;
+    font-size: 10 px;
+  }
 body{
-    height: 1.6;
+    min-height: 100vh;
+    height: 1.6rem;
+       
+}
+nav{
+    margin: 0 auto;
+    max-width: 110rem;
+}
+ul{
+display: flex;
+justify-content: center;
+}
+li{
+    list-style: none; 
+    font-weight: bold
+}
+.background-white{
+    color: #333;
+    background:#FFF ;
+}
+.background-dark{
+    background: #333;
+    color: #FFF;
+}
+.background-blue{
+    background: #4267b2;
+}
+.background-yellow{
+    background: #c7900a;
+}
+a{
+    text-decoration: none;
+}
+li a{
+display: block;
+    color: #FFF;
+    padding: 1.5rem
 }
