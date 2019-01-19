@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
 }
+
 html{
     font-family: "Roboto", sans-serif;
     font-size: 10 px;
@@ -10,8 +11,7 @@ html{
 body{
     min-height: 100vh;
     height: 1.6rem;
-       
-}
+   }
 nav{
     margin: 0 auto;
     max-width: 110rem;
@@ -23,6 +23,24 @@ justify-content: center;
 li{
     list-style: none; 
     font-weight: bold
+}
+ a{
+    text-decoration: none;
+}
+li a:hover{
+    background: #29487d;
+}
+li a{
+    display: block;
+        color: #FFF;
+        padding: 1.5rem;
+}
+main{
+    max-width: 110rem;
+    min-height: cal (100vh-15.5rem);
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    text-align: center;
 }
 .background-white{
     color: #333;
@@ -38,11 +56,83 @@ li{
 .background-yellow{
     background: #c7900a;
 }
-a{
-    text-decoration: none;
+.weather{
+    height: 15rem;
+    width: 30rem;
+    margin: 1rem auto;
+    padding: 1rem;
+    border: 0.5rem solid #4267b2;
+    border-radius: 3rem; 
 }
-li a{
-display: block;
-    color: #FFF;
-    padding: 1.5rem
+.weather-conditions{
+    display: flex;
+    flex-flow: column;
+    align-content: center;
 }
+h1{
+    font-size: 4rem;
+    padding: 2rem;
+}
+h2{
+    padding: 1rem;
+}
+h3{
+    padding-bottom: 1rem;
+}
+.profile-photo{
+    size: 25rem;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 0,5rem solid transparent;
+    box-shadow: 0 0 0.5rem 0.5rem #4267b2;
+ }
+ .toggle-background{
+     display: block;
+     margin: 2rem auto;
+     padding: 1rem;
+     font-size: 2rem;
+     color: #FFF;
+     background: #4267b2;
+     border: none;
+     border-radius: 1rem;
+     outline: none;
+ }
+ .toggle-background:focus{
+     box-shadow: 0 0 1rem 0.2rem #bc243c;
+
+ }
+ .toggle-background:hover{
+     background: #29487d;
+     cursor: pointer;
+ }
+ #description>div{
+     margin: 2rem;
+ }
+ footer{
+        margin-top: 4rem;
+        padding: 1rem;
+        text-align: center;
+        color: #FFF;
+ }
+ 
+
+ @media screen and (min-width: 768px){
+        li>a { 
+            padding: 2rem 5rem;
+        }
+        #description{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        #description > div{
+            width: 30%;
+        }
+ }
+ @media screen and (min-width: 1025px){
+     .weather{
+         height: 15.5rem;
+         width: 20rem;
+         position: absolute;
+         right: 0;
+             }
+ }
