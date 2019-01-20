@@ -16,9 +16,36 @@
 // console.log(part1.concat(" ", part2));
 // const newpart = `${part1} ${part2}`;
 // console.log(newpart)
-// console.log(`${part1} ${part2}`)
-const amount1 = (a,b,c) => a+b+c;
-console.log(amount1(5,5,5));
-console.log(amount1(15,5,10));
-const id = (name, surnamr)=> `Customer name : ${name} ${surnamr}`;
-console.log(id("Oleg", "Dzhum"))
+// // console.log(`${part1} ${part2}`)
+// const amount1 = (a,b,c) => a+b+c;
+// console.log(amount1(5,5,5));
+// console.log(amount1(15,5,10));
+// const id = (name, surnamr)=> `Customer name : ${name} ${surnamr}`;
+// console.log(id("Oleg", "Dzhum"));
+
+// const tabMounth= ["Winter","Spring","Summer","Autem"];// tworzenie tablicy
+// console.log(tabMounth.join(", "));
+// const tabOfMunbers= [1,2,3,14,15,];
+// console.log(tabOfMunbers.filter(tabMounth =>tabMounth<10));
+// console.log(tabOfMunbers.map(tabOfMunbers=>tabOfMunbers*3));
+
+// const car ={ //- metody w objekcie
+//     marka: "Nissan",
+//     modul: "Micra",
+//     productionYear : 2006,
+// start: function() {console.log("starting...")}// dodanie metody 
+// }
+// car.start();
+
+// class Car {
+
+//     constructor(marka, model, productionYear){
+//         this.marka = marka;
+//         this.model =modul;
+//         this.productionYear = productionYear;
+//     };
+
+//         start(){console.log(`${this.marka} is starting`)}
+//     }
+// start();
+    
