@@ -8,9 +8,13 @@ html{
     font-family: "Roboto", sans-serif;
     font-size: 10 px;
   }
+  header{
+    transition: all 1s ease-in-out;
+  }
 body{
     min-height: 100vh;
     height: 1.6rem;
+    transition: all 1s ease-in-out;
    }
 nav{
     margin: 0 auto;
@@ -64,10 +68,29 @@ main{
     border: 0.5rem solid #4267b2;
     border-radius: 3rem; 
 }
+.loader{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    border: 1rem solid #d3d3d3;
+    border-top: 1rem solid #4267b2;
+    margin: auto;
+    margin-top: 1rem;
+    animation: loader 2s linear infinite;
+}
+
+@keyframes loader {
+    0%{
+        transform: rotate(0deg)
+    }
+    100%{
+        transform: rotate(360deg)
+    }
+}
 .weather-conditions{
     display: flex;
     flex-flow: column;
-    align-content: center;
+    align-items: center;
 }
 h1{
     font-size: 4rem;
@@ -113,6 +136,7 @@ h3{
         padding: 1rem;
         text-align: center;
         color: #FFF;
+        transition: all 1s ease-in-out;
  }
  
 
